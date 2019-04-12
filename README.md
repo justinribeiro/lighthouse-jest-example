@@ -1,5 +1,5 @@
 # lighthouse-jest-example
-> Using lighthouse and lighthouse-core with Jest to run tests on your project/site.
+> Using lighthouse and puppeteer with jest to run tests on your project/site.
 
 Basic example that gathers performance metrics via [Lighthouse](https://github.com/GoogleChrome/lighthouse) and tests results with [Jest](https://jestjs.io/). Uses [Puppeteer](https://github.com/GoogleChrome/puppeteer) to start up come with Chrome with [network emulation settings defined by WebPageTest](https://github.com/WPO-Foundation/webpagetest/blob/master/www/settings/connectivity.ini.sample).
 
