@@ -1,0 +1,20 @@
+{
+  "scripts": {
+    "test:lighthouse": "yarn jest --testPathPattern performance --verbose --runInBand",
+    "ws:trustcert:linux": "certutil -d sql:$HOME/.pki/nssdb -A -t \"P,,\" -n ./node_modules/lws/ssl/lws-cert.pem -i ./node_modules/lws/ssl/lws-cert.pem",
+    "ws:removecert:linux": "certutil -D -d sql:$HOME/.pki/nssdb -n -devcert"
+  },
+  "devDependencies": {
+    "@types/eslint": "^4.16.6",
+    "@types/jest": "^24.0.11",
+    "eslint": "^5.15.3",
+    "eslint-config-google": "^0.12.0",
+    "eslint-plugin-html": "^5.0.3",
+    "eslint-plugin-jest": "^22.4.1",
+    "jest": "^24.5.0",
+    "lighthouse": "^4.2.0",
+    "puppeteer": "^1.13.0",
+    "local-web-server": "^2.6.1"
+  },
+  "license": "Apache-2.0"
+}
