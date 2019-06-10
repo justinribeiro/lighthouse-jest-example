@@ -1,9 +1,9 @@
 'use strict';
 
-const {launchChromeAndRunLighthouse, homedir} = require('../utilities/helpers');
+const {launchChromeAndRunLighthouse} = require('../utilities/helpers');
 
 // the url to be audited
-const url = 'https://localhost:11111/something.html';
+const url = 'https://localhost:11111';
 
 // lighthouse options and flags
 const opts = {
